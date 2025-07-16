@@ -122,7 +122,7 @@ async def on_message(message: cl.Message):
     msg = cl.Message(content=" ", author="AI Tutor 👨‍🏫")
     await msg.send()
 
-    try:git
+    try:
         # Step 1: Run guardrail
         guardrail_output = await homework_guardrail(ctx=cl.context, agent=triage_agent, input_data=history)
 
